@@ -6,15 +6,14 @@ GIT_REPO_PATH="$HOME/Developer/professional/grass-keeper-todo"  # Update this to
 # Navigate to repository
 cd "$GIT_REPO_PATH" || { echo "Error: Could not navigate to git repository"; exit 1; }
 
-# Get current date in required formats
 TODAY=$(date -u +"%Y-%m-%d")
 DATE_FORMAT=$(date -u +"%Y-%m-%d %H:%M:%S")
 MONTH=$(date -u +"%Y-%m")
 DAY=$(date -u +"%m%d")
 FILE_PATH="${MONTH}/${DAY}-daily.md"
-
-# Check if there was a commit today from the current user
 LAST_COMMIT_DATE=$(git log --author="JunhaDex" --date=short --format="%cd" -1)
+
+git pull
 
 if [ "$LAST_COMMIT_DATE" != "$TODAY" ]; then
     # Create month directory if it doesn't exist
