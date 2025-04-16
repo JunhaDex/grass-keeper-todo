@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # Set path to your git repository
-GIT_REPO_PATH="$HOME/path/to/your/git/repository"  # Update this to your actual repository path
+GIT_REPO_PATH="$HOME/Developer/professional/grass-keeper-todo"  # Update this to your actual repository path
 
 # Navigate to repository
 cd "$GIT_REPO_PATH" || { echo "Error: Could not navigate to git repository"; exit 1; }

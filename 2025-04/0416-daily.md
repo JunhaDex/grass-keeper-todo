@@ -2,5 +2,5 @@
 Last updated: 2025-04-16 00:49:48
 
 ## Tasks
-- [ ] Task 1
-- [ ] Task 2
+- [ ] Create Html(x) + Shadcn component demo (tailwindcss)
+- [ ] POC Shadcn component bases
